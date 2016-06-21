@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WhitebreadDemo</string>
+    <string name="foursquare_api_address">https://api.foursquare.com/v2/%1$s&amp;client_id=%2$s&amp;client_secret=%3$s&amp;v=%4$s</string>
+    <string name="foursquare_venue_search">venues/search?query=%1$s&amp;ll=%2$s,%3$s</string>
+    <string name="foursquare_venue_explore">venues/explore?query=%1$s&amp;ll=%2$s,%3$s&amp;sortByDistance=1&amp;venuePhotos=1</string>
+    <string name="foursquare_icon_url">%1$s%2$s%3$s</string>
+    <string name="foursquare_icon_grey_background_url">%1$sbg_%2$s%3$s</string>
+    <string name="distance_text_meters">%1$sm from you</string>
+    <string name="distance_text_kilometers">%1$skm from you</string>
+    <string name="search_hint">Search Places</string>
+    <string name="menu_search_venue">Search Venues</string>
+    <string name="activity_not_found_error_message">App not found</string>
+    <string name="activity_main_location_not_found">Unable to get your location</string>
+    <string name="activity_main_try_again">Try again</string>
+    <string name="activity_main_search_failed">Search failed</string>
+</resources>

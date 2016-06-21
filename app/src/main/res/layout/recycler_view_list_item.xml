@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recycler_list_item_height"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/recycler_item_venue_image"
+            android:layout_width="@dimen/recycler_list_item_height"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/recycler_list_item_venue_image_padding"/>
+
+        <TextView
+            android:id="@+id/recycler_item_venue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Venue name"
+            android:layout_toRightOf="@+id/recycler_item_venue_image"
+            android:layout_toEndOf="@+id/recycler_item_venue_image"
+            android:gravity="center"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/recycler_item_venue_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Venue name"
+            android:layout_toRightOf="@+id/recycler_item_venue_image"
+            android:layout_toEndOf="@+id/recycler_item_venue_image"
+            android:layout_below="@+id/recycler_item_venue_name"
+            android:layout_above="@+id/recycler_item_buttons_layout"
+            android:gravity="center"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:id="@+id/recycler_item_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_list_item_button_height"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/recycler_item_venue_image"
+            android:layout_toRightOf="@+id/recycler_item_venue_image">
+
+            <ImageButton
+                android:id="@+id/recycler_item_twitter_button"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twitter_logo"
+                android:scaleType="fitCenter"  />
+
+            <ImageButton
+                android:id="@+id/recycler_item_facebook_button"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebook_logo"
+                android:scaleType="fitCenter"  />
+
+            <ImageButton
+                android:id="@+id/recycler_item_menu_button"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_icon"
+                android:scaleType="fitCenter"  />
+
+            <ImageButton
+                android:id="@+id/recycler_item_phone_button"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/stat_sys_phone_call"
+                android:scaleType="fitCenter"  />
+
+            <ImageButton
+                android:id="@+id/recycler_item_navigate_button"
+                android:layout_weight="0.25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_dialog_map"
+                android:scaleType="fitCenter"  />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
