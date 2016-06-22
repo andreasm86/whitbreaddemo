@@ -67,8 +67,7 @@ public class MainActivity extends LocationActivity implements VenuesRecyclerAdap
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if(!super.onCreateOptionsMenu(menu))
-            return false;
+        super.onCreateOptionsMenu(menu);
         //Inflate the options menu from XML
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.options_menu, menu);
